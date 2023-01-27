@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TicTacToe JS</title>
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <section class="game">
+    <div class="playerInformation">
+      <input type="text" id='player1' value="Player 1" name="name" class="ghost-input">
+      <input for="points" class="ghost-input-points" id="player1_points" value = '0' disabled>
+    </div>
+    <div class="playerInformation">
+      <input type="text" id='player2' value="Player 2" name="name" class="ghost-input">
+      <input for="points" class="ghost-input-points" id="player2_points" value="0" disabled>
+    </div>
+    <div class="options">
+      <button onclick="resetScore()" class="resetScore">Reset Score</button>
+      <button onclick="resetGame()" class="resetGame">Reset Game</button>
+    </div>
+    <div id="turn" class="turn"></div>
+    <div class="board">
+      <div class="square" id="1"></div>
+      <div class="square" id="2"></div>
+      <div class="square" id="3"></div>
+      <div class="square" id="4"></div>
+      <div class="square" id="5"></div>
+      <div class="square" id="6"></div>
+      <div class="square" id="7"></div>
+      <div class="square" id="8"></div>
+      <div class="square" id="9"></div>
+    </div>
+    <div class="footer">
+      <p class="">Made by <br> <a href="https://beacons.ai/nicolasvondolinger" target="_blank" rel="noopener noreferrer">Nicolas von Dolinger</a></p>
+    </div>
+  </section>
+  
+</body>
+</html>
